@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+           <title>NUMEROS PARES Y PRIMOS</title>
+</head>
+<body>
+<br />
+<h1>Validación de números pares y primos</h1>
+<br />
+<script type ="text/javascript">
+var nume = [1,2,3,4,5,10,11,12,13,14,15];
+var a,i,j;
+for ( i = 0 ; i < nume.length ; i++) {
+            document.write('El  numero '+nume[i]+' es: ');
+            a=0;
+            for(j = 1;j<(nume[i]+1);j++){  
+         		if(nume[i]%j==0){  
+            	 a++;  
+            	}  
+         	}  
+         	if((a==2) && (nume[i]%2==0)){  
+              document.write("Par y primo<br>");  
+            }else{  
+                if(a==2){  
+             	 document.write("Primo<br>");  
+            }else{  
+                if(nume[i]%2==0){  
+             	 document.write("Par<br>"); 
+
+            }else{  
+               	 document.write("Ni primo ni par<br>");  
+            }  
+         }  
+     } 
+  } 
+</script>
+</body>
+</html>
