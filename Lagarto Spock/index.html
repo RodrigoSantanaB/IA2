@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Juego Inteligencia Artificial</title>
+	<script src = "lagarto.js?a=2"></script>
+	<style type="text/css">
+    html, body {
+        height: 100%;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+ 
+    #full-screen-background-image {
+        z-index: -999;
+        width: 100%;
+        height: auto;
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+</style>
+</head>
+<body>
+ <img alt="full screen background image" src="f.png" id="full-screen-background-image" /> 
+ <br><br><br><br><br>
+ <br><br><br><br><br>
+ <br><br><br><br><br>
+  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+<td width="40%" align="right"><br>
+
+    <img width="150px" src = "img_4.png" id = "imagenPrueba"/>
+    <br>
+  <h1><span id = 'pun_1'>Ganadas: 0</span></h1>
+    </td> 
+    <td width="20%"><br>  <center>
+        <h3><div id = 'juega_pc'> <br><br>Jugada humano</div></h3>
+         <center><label for="select"></label>
+          <select name="jugada_humano" id="jugada_humano" style="font-size:20px;">
+                 <option value="1">Piedra</option>
+                 <option value="2">Papel</option>
+                 <option value="3">Tijera</option>
+                 <option value="4">Lagarto</option>
+                 <option value="5">Spock</option>
+        </select>
+    </td>   
+<td width="40%" align="left"><br>
+  <img width="150px"  src = "img_5.png" id = "imagenPrueba2"/>
+  <br>
+  <h1><span id = 'pun_2'>Ganadas: 0</span></h1></td>
+</tr>
+<tr>
+
+    <td width="40%"></td>
+        <td width="20%"><center>
+        <input type="button" name="btnjuega" id="btnjuega" value="Jugar"  style="font-size:30px;"/>
+    </td>  
+
+      </tr>
+    <tr>    
+    <td width="100%" colspan="3">
+    	<h1><div id = "resultado" align="center"></div></h1>
+    </td>
+  </tr>
+</table>
+<audio autoplay loop src="musica.mp3" type="audio/mpeg" volume="100"> </audio>
+</body>
+</html>
