@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Triqui UDEC</title>
+	<link rel="stylesheet" type="text/css" href="estilo/estilos.css">
+	<script type="text/javascript" src = "js/script.js"></script>
+		<style type="text/css">
+    html, body {
+        height: 100%;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+ 
+    #full-screen-background-image {
+        z-index: -999;
+        width: 100%;
+        height: auto;
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+</style>
+</head>
+<body>
+	<img alt="" src="imagenes/1.jpg" id="full-screen-background-image" /> 
+	<center>
+		<br>
+		<select id = 'seleJugada'>
+			<option value="1">X</option>
+			<option value="2">O</option>
+		</select>
+		<button id = "iniJuego">Nuevo Juego</button><br>
+		<br>
+		<div id="escenario"></div>
+		<br>
+		<div id="puntuacion">Humano = 0 - PC = 0</div>
+		<div id="inicia">Inicia el Humano</div>
+	</center>
+
+	<audio id="x" autoplay loop src="audio/musica.mp3" type="audio/mpeg" volume="10"> </audio>
+	<audio id="a" src="audio/perder.mp3" type="audio/mpeg"> </audio>
+	<audio id="b" src="audio/aplauso.mp3" type="audio/mpeg"> </audio>
+	<audio id="c" src="audio/juego.mp3" type="audio/mpeg"> </audio>
+</body>
+</html>
